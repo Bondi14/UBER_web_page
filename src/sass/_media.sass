@@ -187,6 +187,7 @@
             height: 22px
             font-size: 10px
             margin-top: 6px
+            background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
         padding: 93px 0 35px 0
@@ -205,8 +206,16 @@
             width: 210px
             height: 50px
             margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
     .menu
-      width: 85%  
+        width: 85% 
+        &_item
+           width: 100%
+           text-align: center
+           padding: 5px
+        &_link
+            display: block
     .reasons
         padding: 22px 0 36px 0
     .title 
