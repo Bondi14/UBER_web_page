@@ -41,6 +41,9 @@
         flex-direction: column
         align-items: center
     
+    .reasons .reasons_block .reasons_round
+        margin-right: 0
+    
     .reasons .reasons_block .reasons_descr
         width: 300px
         margin-top: 20px
@@ -57,10 +60,6 @@
             flex-direction: column
             img
                 margin-bottom: 5px
-
-
-
-
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -105,9 +104,126 @@
                 &:nth-child(2)
                     display: none
                 &:nth-child(3)
-                    transform: translateY(3px) rotate(45deg)
-                    
+                    transform: translateY(3px) rotate(45deg)              
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+            font-size: 40px
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .subheader
+        height: 60px
+        top: 30px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+    .menu
+      width: 85%  
+    .reasons
+        padding: 22px 0 36px 0
+    .title 
+        font-size: 16px
+        margin-top: 15px
+        line-height: 16px
+    .reasons .reasons_block
+        margin-top: 26px
+    .reasons .reasons_block .reasons_round
+        width: 100px
+        height: 100px
+    .reasons .reasons_block .reasons_descr
+        width: 100%
+        margin-top: 27px
+    .reasons .reasons_block .reasons_descr .reasons_subtitle
+        font-size: 16px
+    
+    .cities .cities_link
+        padding-bottom: 50px
 
+    .footer
+        &_wrapper
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .group1
+                order: 1
+                margin-top: 10px
+            .group2
+                order: 2
+            div
+                width: 100%
+                justify-content: center
+        &_divider
+            width: 90%
+        &_social
+            justify-content: center
+        &_links
+            &_main
+                a
+                    font-size: 11px
+                    margin-top: 21px
+            &_sub
+                display: inline-block
+                text-align: center
+                a
+                    font-size: 10px
+                    margin-top: 21px
+                    margin-right: 6px
+        &_mobile
+            display: flex
+            flex-direction: row
+            justify-content: center
+            img
+                margin: 4px
 
-
-
+    
